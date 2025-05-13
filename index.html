@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1>Conversor de <br> Medidas</h1>
+        </div>
+
+        <label for="categoria"></label>
+        <select id="categoria" onchange="atualizarUnidades()">
+            <option value="comprimento">Comprimento</option>
+            <option value="massa">Massa</option>
+            <option value="temperatura">Temperatura</option>
+            <option value="tempo">Tempo</option>
+            <option value="volume">Volume</option>
+            <option value="velocidade">Velocidade</option>
+        </select><br>
+
+        <input type="number" id="valor" placeholder="Digite o valor"><br>
+
+        <div class="unidades">
+            <div class="formulario">
+                <label for="origem">De</label>
+                <select id="origem"></select>
+            </div>
+
+            <div class="formulario">
+                <label for="destino">Para</label>
+                <select id="destino"></select>
+            </div>
+        </div>
+
+        <button class="conversao" onclick="converter()">Converter</button>
+
+        <div class="resultado" id="resultado"> Resultado: </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
