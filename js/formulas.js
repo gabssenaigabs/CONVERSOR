@@ -42,7 +42,7 @@ const valores = {
             switch (origem) {
                 case "Celsius": celsius = valor; break;
                 case "Fahrenheit": celsius = (valor - 32) * 5 / 9; break;
-                case "Kelvin": celsius = value - 273.15; break;
+                case "Kelvin": celsius = valor - 273.15; break;
             }
 
             switch (destino) {
